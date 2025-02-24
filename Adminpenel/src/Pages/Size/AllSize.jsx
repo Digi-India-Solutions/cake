@@ -12,7 +12,7 @@ const AllSize = () => {
   useEffect(() => {
     const fetchSizes = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/get-size"); // Adjust the URL for fetching sizes
+        const response = await axios.get("https://api.cakecrazzy.com/api/get-size"); // Adjust the URL for fetching sizes
         if (response.data && response.data.data) {
           setSizes(response.data.data); // Set the fetched sizes
         } else {
@@ -43,7 +43,7 @@ const AllSize = () => {
     if (confirmed.isConfirmed) {
       try {
         const response = await axios.delete(
-          `http://localhost:5000/api/delete-size/${id}`
+          `https://api.cakecrazzy.com/api/delete-size/${id}`
         ); // Adjust the delete URL
         toast.success(response.data.message);
         setSizes(sizes.filter((size) => size._id !== id)); // Remove deleted size from state

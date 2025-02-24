@@ -18,7 +18,7 @@ const EditColor = () => {
     const fetchColor = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/get-single-color/${id}`
+          `https://api.cakecrazzy.com/api/get-single-color/${id}`
         );
         setColorData({
           ...response.data.data,
@@ -50,7 +50,7 @@ const EditColor = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/update-color/${id}`,
+        `https://api.cakecrazzy.com/api/update-color/${id}`,
         colorData
       );
       toast.success(response.data.message); // Show success message

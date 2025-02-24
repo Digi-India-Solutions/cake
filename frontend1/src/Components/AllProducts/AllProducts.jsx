@@ -23,7 +23,7 @@ const AllProducts = () => {
   const getApiData = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/get-main-category"
+        "https://api.cakecrazzy.com/api/get-main-category"
       );
       if (res.status === 200) {
         setCategoryData(res.data.data);
@@ -40,7 +40,7 @@ const AllProducts = () => {
 
   const getApiProductData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/all-product");
+      const res = await axios.get("https://api.cakecrazzy.com/api/all-product");
       if (res.status === 200) {
         const groupedProducts = res.data.data.reduce((acc, product) => {
           const categoryId = product.categoryName._id;
@@ -94,7 +94,7 @@ const AllProducts = () => {
                 <div key={product._id} className="product-card">
                   <div className="product-image">
                     <img
-                      src={`http://localhost:5000/${product.productImage[0]}`}
+                      src={`https://api.cakecrazzy.com/${product.productImage[0]}`}
                       alt={product.productName}
                       loading="lazy"
                     />

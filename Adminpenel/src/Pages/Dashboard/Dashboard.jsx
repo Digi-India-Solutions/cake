@@ -42,64 +42,64 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         // Fetch users
-        const usersResponse = await axios.get("http://localhost:5000/api/user");
+        const usersResponse = await axios.get("https://api.cakecrazzy.com/api/user");
         setUsers(usersResponse.data.data);
 
         // Fetch banners
         const bannersResponse = await axios.get(
-          "http://localhost:5000/api/get-banners"
+          "https://api.cakecrazzy.com/api/get-banners"
         );
         setBanners(bannersResponse.data.data);
 
         // Fetch categories
         const categoriesResponse = await axios.get(
-          "http://localhost:5000/api/get-main-category"
+          "https://api.cakecrazzy.com/api/get-main-category"
         );
         setCategories(categoriesResponse.data.data);
 
         // Fetch sub-categories
         const subCategoriesResponse = await axios.get(
-          "http://localhost:5000/api/get-subcategory"
+          "https://api.cakecrazzy.com/api/get-subcategory"
         );
         setSubCategories(subCategoriesResponse.data.data);
 
         // Fetch colors
         const colorsResponse = await axios.get(
-          "http://localhost:5000/api/get-color"
+          "https://api.cakecrazzy.com/api/get-color"
         );
         setColors(colorsResponse.data.data);
 
         // Fetch sizes
         const sizesResponse = await axios.get(
-          "http://localhost:5000/api/get-size"
+          "https://api.cakecrazzy.com/api/get-size"
         );
         setSizes(sizesResponse.data.data);
 
         // Fetch flowers
         const flowersResponse = await axios.get(
-          "http://localhost:5000/api/get-flover"
+          "https://api.cakecrazzy.com/api/get-flover"
         );
         setFlowers(flowersResponse.data.data);
 
         // Fetch products
         const productsResponse = await axios.get(
-          "http://localhost:5000/api/all-product"
+          "https://api.cakecrazzy.com/api/all-product"
         );
         setProducts(productsResponse.data.data);
 
         // Fetch tags
         const tagsResponse = await axios.get(
-          "http://localhost:5000/api/get-tags"
+          "https://api.cakecrazzy.com/api/get-tags"
         );
         setTags(tagsResponse.data.data);
 
         // Fetch vouchers
-        // const vouchersResponse = await axios.get('http://localhost:5000/api/vouchers');
+        // const vouchersResponse = await axios.get('https://api.cakecrazzy.com/api/vouchers');
         // setVouchers(vouchersResponse.data);
 
         // Fetch orders
         const ordersResponse = await axios.get(
-          "http://localhost:5000/api/checkouts"
+          "https://api.cakecrazzy.com/api/checkouts"
         );
         // console.log(ordersResponse)
         setOrders(ordersResponse.data.data);
@@ -120,11 +120,11 @@ const Dashboard = () => {
   //   const fetchData = async () => {
   //     try {
   //       // Fetch orders for show order graph
-  //       const ordersResponse = await axios.get('http://localhost:5000/api/orders');
+  //       const ordersResponse = await axios.get('https://api.cakecrazzy.com/api/orders');
   //       setOrderss(ordersResponse.data);
 
   //       // Fetch day-by-day sale data for the graph
-  //       const salesResponse = await axios.get('http://localhost:5000/api/day-sales');
+  //       const salesResponse = await axios.get('https://api.cakecrazzy.com/api/day-sales');
   //       setDaySales(salesResponse.data);
 
   //     } catch (error) {

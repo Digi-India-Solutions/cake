@@ -49,7 +49,7 @@ const CheckOut = () => {
   const initiateOnlinePayment = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/checkout",
+        "https://api.cakecrazzy.com/api/checkout",
         formData
       );
       //console.log(response);
@@ -67,7 +67,7 @@ const CheckOut = () => {
         handler: async (paymentResponse) => {
           try {
             const verifyResponse = await axios.post(
-              "http://localhost:5000/api/verify-payment",
+              "https://api.cakecrazzy.com/api/verify-payment",
               {
                 razorpay_payment_id: paymentResponse.razorpay_payment_id,
                 razorpay_order_id: paymentResponse.razorpay_order_id,
@@ -120,7 +120,7 @@ const CheckOut = () => {
   const submitOrder = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/checkout",
+        "https://api.cakecrazzy.com/api/checkout",
         formData
       );
       if (response.status === 200) {
@@ -260,7 +260,7 @@ const CheckOut = () => {
                     <tr key={`${item.id}-${item.weight}`}>
                       <td>
                         <img
-                          src={`http://localhost:5000/${item.image}`}
+                          src={`https://api.cakecrazzy.com/${item.image}`}
                           alt={item.name}
                           style={{ height: 50 }}
                         />

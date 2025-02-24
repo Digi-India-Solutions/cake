@@ -19,7 +19,7 @@ const AddSubCategory = () => {
     const fetchMainCategories = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/get-main-category"
+          "https://api.cakecrazzy.com/api/get-main-category"
         );
         setMainCategories(response.data.data);
       } catch (error) {
@@ -76,7 +76,7 @@ const AddSubCategory = () => {
       // Send the request
       console.log(formDataToSend)
       const response = await axios.post(
-        "http://localhost:5000/api/create-subcategory",
+        "https://api.cakecrazzy.com/api/create-subcategory",
         formDataToSend,
         {
           headers: {

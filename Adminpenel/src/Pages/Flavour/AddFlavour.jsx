@@ -34,7 +34,7 @@ const AddFlover = () => {
     try {
       // Send a POST request to add the flover
       const response = await axios.post(
-        "http://localhost:5000/api/create-flover",
+        "https://api.cakecrazzy.com/api/create-flover",
         formData
       ); // Adjust the URL as needed
       toast.success(response.data.message);

@@ -21,7 +21,7 @@ const AddInnerSubCategory = () => {
     const fetchMainCategories = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/get-main-category"
+          "https://api.cakecrazzy.com/api/get-main-category"
         );
         setMainCategories(response.data.data);
       } catch (error) {
@@ -36,7 +36,7 @@ const AddInnerSubCategory = () => {
     const fetchSubCategories = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/get-subcategory"
+          "https://api.cakecrazzy.com/api/get-subcategory"
         );
         setSubCategories(response.data.data);
       } catch (error) {
@@ -94,7 +94,7 @@ const AddInnerSubCategory = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/create-inner-subcategory",
+        "https://api.cakecrazzy.com/api/create-inner-subcategory",
         data,
         {
           headers: {

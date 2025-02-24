@@ -24,10 +24,10 @@ const EditProductTag = () => {
     const fetchProductTag = async () => {
       try {
         const tagResponse = await axios.get(
-          `http://localhost:5000/api/single-producttag/${id}`
+          `https://api.cakecrazzy.com/api/single-producttag/${id}`
         );
         const productResponse = await axios.get(
-          "http://localhost:5000/api/all-product"
+          "https://api.cakecrazzy.com/api/all-product"
         );
         setProducts(productResponse.data.data || []);
 
@@ -134,7 +134,7 @@ const EditProductTag = () => {
       formDataToSend.append("priceRange", JSON.stringify(formData.priceRange));
 
       const response = await axios.put(
-        `http://localhost:5000/api/update-producttag/${id}`,
+        `https://api.cakecrazzy.com/api/update-producttag/${id}`,
         formDataToSend,
         {
           headers: { "Content-Type": "multipart/form-data" },

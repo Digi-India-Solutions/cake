@@ -34,7 +34,7 @@ const AddSize = () => {
     try {
       // Send a POST request to add the size
       const response = await axios.post(
-        "http://localhost:5000/api/create-size",
+        "https://api.cakecrazzy.com/api/create-size",
         formData
       ); // Adjust the URL as needed
       toast.success(response.data.message);

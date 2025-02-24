@@ -16,7 +16,7 @@ const EditRefrenceCompany = () => {
     const fetchRefCompany = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/ref-company/${id}`
+          `https://api.cakecrazzy.com/api/ref-company/${id}`
         ); // Adjusted endpoint
         //console.log(response);
         if (response.data && response.data.data) {
@@ -52,7 +52,7 @@ const EditRefrenceCompany = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/update-ref-company/${id}`,
+        `https://api.cakecrazzy.com/api/update-ref-company/${id}`,
         refCompanyData
       ); // Adjusted endpoint
       toast.success(response.data.message); // Show success message

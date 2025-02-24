@@ -11,7 +11,7 @@ const Footer = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/get-category-with-subcategory"
+          "https://api.cakecrazzy.com/api/get-category-with-subcategory"
         );
         if (
           response.data.message ===

@@ -13,7 +13,7 @@ const AllOrder = () => {
   // Fetch all orders from the backend
   const fetchOrders = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/checkouts");
+      const response = await axios.get("https://api.cakecrazzy.com/api/checkouts");
       //console.log(response);
       setOrders(response.data);
       setFilteredOrders(response.data); // Initialize filtered orders
@@ -36,7 +36,7 @@ const AllOrder = () => {
       });
 
       if (confirmation.isConfirmed) {
-        await axios.delete(`http://localhost:5000/api/checkout/${orderId}`);
+        await axios.delete(`https://api.cakecrazzy.com/api/checkout/${orderId}`);
         setOrders((prevOrders) =>
           prevOrders.filter((order) => order._id !== orderId)
         );

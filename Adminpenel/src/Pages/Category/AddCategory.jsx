@@ -22,7 +22,7 @@ const AddCategory = () => {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/create-main-category",
+        "https://api.cakecrazzy.com/api/create-main-category",
         formData,
         {
           headers: {

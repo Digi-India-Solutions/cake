@@ -17,7 +17,7 @@ const EditSize = () => {
     const fetchSize = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/get-single-size/${id}`
+          `https://api.cakecrazzy.com/api/get-single-size/${id}`
         ); // Adjust the endpoint for sizes
         // Convert sizeStatus to boolean for easier handling
         setSizeData({
@@ -56,7 +56,7 @@ const EditSize = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/update-size/${id}`,
+        `https://api.cakecrazzy.com/api/update-size/${id}`,
         updatedData
       ); // Adjust the update endpoint
       toast.success(response.data.message); // Show success message

@@ -13,7 +13,7 @@ const AllInnerSubCategory = () => {
     const fetchInnerSubCategories = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/get-inner-subcategory"
+          "https://api.cakecrazzy.com/api/get-inner-subcategory"
         );
         setInnerSubcategories(response.data.data);
       } catch (error) {
@@ -41,7 +41,7 @@ const AllInnerSubCategory = () => {
 
       if (result.isConfirmed) {
         await axios.delete(
-          `http://localhost:5000/api/delete-inner-subcategory/${id}`
+          `https://api.cakecrazzy.com/api/delete-inner-subcategory/${id}`
         );
         setInnerSubcategories(
           innerSubcategories.filter((subcategory) => subcategory._id !== id)
@@ -95,7 +95,7 @@ const AllInnerSubCategory = () => {
                 <td>{subcategory.innerSubcategoryName}</td>
                 <td>
                   <img
-                    src={`http://localhost:5000/${subcategory.Image}`}
+                    src={`https://api.cakecrazzy.com/${subcategory.Image}`}
                     alt={subcategory.innerSubcategoryName}
                     style={{ width: "50px", height: "50px" }}
                   />

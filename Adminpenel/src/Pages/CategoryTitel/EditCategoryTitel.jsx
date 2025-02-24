@@ -18,7 +18,7 @@ const EditCategoryTitel = () => {
     const fetchCategory = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/get-single-main-category/${id}`
+          `https://api.cakecrazzy.com/api/get-single-main-category/${id}`
         );
         const { mainCategoryName, mainCategoryImage, mainCategoryStatus } =
           response.data.data;
@@ -62,7 +62,7 @@ const EditCategoryTitel = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/update-main-category/${id}`,
+        `https://api.cakecrazzy.com/api/update-main-category/${id}`,
         formData,
         {
           headers: {

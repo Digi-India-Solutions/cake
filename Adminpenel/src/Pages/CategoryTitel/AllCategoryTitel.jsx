@@ -13,7 +13,7 @@ const AllCategoryTitel = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/get-main-category"
+          "https://api.cakecrazzy.com/api/get-main-category"
         );
         setCategories(response.data.data); // assuming the data is in response.data.data
         // toast.success(response.data.message);
@@ -42,7 +42,7 @@ const AllCategoryTitel = () => {
     if (confirmDelete.isConfirmed) {
       try {
         await axios.delete(
-          `http://localhost:5000/api/delete-main-category/${id}`
+          `https://api.cakecrazzy.com/api/delete-main-category/${id}`
         );
         setCategories(categories.filter((category) => category._id !== id));
         Swal.fire("Deleted!", "Your category has been deleted.", "success");
@@ -108,7 +108,7 @@ const AllCategoryTitel = () => {
                   <td>{category.mainCategoryName}</td>
                   <td>
                     <img
-                      src={`http://localhost:5000/${category.mainCategoryImage}`}
+                      src={`https://api.cakecrazzy.com/${category.mainCategoryImage}`}
                       alt={category.mainCategoryName}
                       style={{ width: "50px", height: "50px" }}
                     />

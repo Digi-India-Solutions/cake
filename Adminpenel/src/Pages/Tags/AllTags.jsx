@@ -13,7 +13,7 @@ const AllTags = () => {
   const fetchTags = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get("http://localhost:5000/api/get-tags");
+      const response = await axios.get("https://api.cakecrazzy.com/api/get-tags");
       // //console.log(response)
       setTags(response.data.data); // Assuming the response data is an array of tags
     } catch (error) {
@@ -35,7 +35,7 @@ const AllTags = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await axios.delete(`http://localhost:5000/api/delete-tags/${id}`);
+          await axios.delete(`https://api.cakecrazzy.com/api/delete-tags/${id}`);
           fetchTags(); // Refresh the tags list after deletion
           Swal.fire("Deleted!", "Your tag has been deleted.", "success");
         } catch (error) {

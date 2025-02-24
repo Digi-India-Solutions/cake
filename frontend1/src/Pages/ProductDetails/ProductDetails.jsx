@@ -19,7 +19,7 @@ const ProductDetails = () => {
   const getApiData = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/get-product-by-name/${name}`
+        `https://api.cakecrazzy.com/api/get-product-by-name/${name}`
       );
       const productData = res.data.data;
       setData(productData);
@@ -141,7 +141,7 @@ const ProductDetails = () => {
       return (
         <a>
           <img
-            src={`http://localhost:5000/${data.productImage?.[i]}`}
+            src={`https://api.cakecrazzy.com/${data.productImage?.[i]}`}
             className="w-100"
             style={{ borderRadius: "1rem" }}
             alt={`Thumbnail ${i + 1}`}
@@ -182,7 +182,7 @@ const ProductDetails = () => {
                       <div key={index} className="productImage">
                         <img
                           className="productImageMain"
-                          src={`http://localhost:5000/${image}`}
+                          src={`https://api.cakecrazzy.com/${image}`}
                           style={{ borderRadius: "0.5rem" }}
                           alt={`Product Image ${index + 1}`}
                         />

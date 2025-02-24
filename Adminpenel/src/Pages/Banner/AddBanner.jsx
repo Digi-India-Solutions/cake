@@ -45,7 +45,7 @@ const AddBanner = () => {
 
         try {
             setIsLoading(true);
-            const response = await axios.post('http://localhost:5000/api/create-banner', submitData, {
+            const response = await axios.post('https://api.cakecrazzy.com/api/create-banner', submitData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

@@ -32,7 +32,7 @@ const AddShopBanner = () => {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/send-sale",
+        "https://api.cakecrazzy.com/api/send-sale",
         data,
         { responseType: "blob" }
       );

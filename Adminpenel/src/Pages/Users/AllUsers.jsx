@@ -8,7 +8,7 @@ const AllUsers = () => {
   // Fetch users from the API
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/user");
+      const response = await axios.get("https://api.cakecrazzy.com/api/user");
       if (response.data.success) {
         setUsers(response.data.data); // Save the user data
       } else {
@@ -35,7 +35,7 @@ const AllUsers = () => {
     if (result.isConfirmed) {
       try {
         const response = await axios.delete(
-          `http://localhost:5000/api/delete-user/${userId}`
+          `https://api.cakecrazzy.com/api/delete-user/${userId}`
         );
         if (response.status === 200) {
           Swal.fire("Deleted!", "The user has been deleted.", "success");

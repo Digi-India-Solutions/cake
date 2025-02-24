@@ -21,7 +21,7 @@ const ContactUs = () => {
     console.log(formData);
     try {
       // Simulating an API call (replace with actual API endpoint)
-      const response = await fetch("http://localhost:5000/api/send-query", {
+      const response = await fetch("https://api.cakecrazzy.com/api/send-query", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

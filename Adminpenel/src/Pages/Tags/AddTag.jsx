@@ -29,7 +29,7 @@ const AddTag = () => {
     try {
       // Send POST request to the backend
       const response = await axios.post(
-        "http://localhost:5000/api/add-tags",
+        "https://api.cakecrazzy.com/api/add-tags",
         formData
       );
 

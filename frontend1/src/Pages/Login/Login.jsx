@@ -33,7 +33,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/login",
+        "https://api.cakecrazzy.com/api/user/login",
         loginData
       ); // Make API call to login route
       if (response.status === 200) {
@@ -76,7 +76,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user",
+        "https://api.cakecrazzy.com/api/user",
         registerData
       );
       //console.log(response);
