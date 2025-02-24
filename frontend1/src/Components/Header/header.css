@@ -1,0 +1,137 @@
+.navbar {
+  padding: 0;
+  border-bottom: 1px solid lightgray;
+  background: white;
+}
+
+.nav-link {
+  font-family: monospace;
+}
+
+.searchInput {
+  width: 500px;
+  height: 35px;
+  border-radius: 0;
+}
+
+.searchBtn {
+  background-color: var(--color-pink);
+  color: white;
+  border: none;
+  padding: 6px 15px;
+  font-size: 0.9rem;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.nav-item .nav-link {
+  color: var(--color-pink);
+  font-weight: 500;
+  font-family: cursive;
+  font-size: 18px;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--color-brown);
+}
+
+.cart-login-container {
+  display: flex;
+  align-items: center;
+}
+.cart-login-container a{
+  color: var(--color-pink);
+  font-size: 20px;
+}
+
+.nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 9999; /* Increase the z-index */
+}
+
+.navbar-toggler-icon{
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+@media (max-width: 767px) {
+  .navbar-toggler{
+    position: absolute;
+    top: -45px;
+    right: 0;
+    margin: 0;
+  }
+  .navbar{
+    position: relative;
+  }
+  /* Keep the logo, cart/login icons, and toggle button in a single line */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+
+  .logo-container {
+    flex: 1;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .cart-login-container {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Ensure the navbar toggle button is aligned on the right */
+  .navbar-toggler {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+  }
+
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+
+  .searchInput {
+    width: 100%;
+  }
+
+  /* Ensure the navbar links are stacked vertically */
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    padding: 5px 10px;
+    text-align: center;
+  }
+}

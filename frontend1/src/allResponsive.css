@@ -1,0 +1,5 @@
+@media only  screen and (max-width:768px) {
+    .breadCrumb .breadCrumbContent{
+        padding: 2rem 2rem;
+    }
+}

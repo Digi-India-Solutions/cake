@@ -1,0 +1,131 @@
+.allProducts {
+    display: flex;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .mainProducts {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 20px;
+    max-height: 100%;
+    overflow-y: scroll;
+  }
+  
+  .filter-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-title {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Dropdown effect */
+  .filter-options {
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .filter-options.open {
+    max-height: 200px; /* Adjust based on content height */
+    opacity: 1;
+  }
+  
+  .filter-options li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-options li:hover {
+    color: #007bff;
+  }
+  
+  .allContentSide {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .allContentSide h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .allContentSide a{
+    text-decoration: none;
+  }
+  
+  .productTitle{
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .productDetails{
+    padding: 1rem 0.5rem 0;
+  }
+
+  .productPrice{
+    color: var(--color-brown);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .allContentSide .card{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    height: 100%;
+  }
+
+  .allContentSide .card img{
+    border-radius: 1rem;
+  }
+
+@media only screen and (max-width: 768px) {
+  .mainProducts {
+    display: block;
+  }
+  .sidebar {
+    width: 100%;
+    border-radius: 8px;
+    margin-right: 0px;
+    margin-bottom: 1rem;
+  }
+  .allProducts , .allContentSide{
+    padding: 10px;
+  }
+  .allContentSide .card img{
+    height: 170px;
+    object-fit: cover;
+  }
+}

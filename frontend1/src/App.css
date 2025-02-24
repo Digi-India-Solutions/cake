@@ -1,0 +1,49 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+:root {
+  --color-pink: #ec008c;
+  --color-brown: #90433a;
+  --font-family-design: "Pacifico", cursive;
+}
+
+.topspacing {
+  margin-top: 2rem;
+}
+
+.breadCrumb {
+  background-image: url("./images/breadCrumb.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadCrumb .breadCrumbContent {
+  padding: 4rem 8rem;
+  background-color: #ec008e33;
+}
+
+.breadCrumbContent h1 {
+  color: var(--color-pink);
+  font-family: var(--font-family-design);
+}
+
+.breadCrumb .breadCrumbContent a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+  .topspacing {
+    margin-top: 1rem;
+  }
+}

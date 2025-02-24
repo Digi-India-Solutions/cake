@@ -1,0 +1,172 @@
+.miniImage li {
+  width: 100px;
+}
+
+.miniImage li a img {
+  width: 150px;
+  height: 100px;
+  margin-top: 1rem;
+}
+
+.miniImage {
+  padding: 0;
+  list-style-type: none;
+  display: flex !important;
+  gap: 10px;
+}
+
+.slider-container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.detailPrice {
+  display: flex;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-brown);
+  margin: 0;
+}
+
+.detailPrice span {
+  font-size: 40px;
+}
+
+.productDescription .descrip p {
+  font-size: 14px;
+}
+.productDescription .descrip b {
+  font-size: 14px;
+  color: var(--color-brown);
+  margin: 0;
+}
+
+.delivery_inf ul li {
+  font-size: 14px;
+}
+
+.productDetail_buttons {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 1rem;
+}
+
+.productDetail_buttons .add_to_cart {
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: var(--color-pink);
+  color: white;
+}
+.productDetail_buttons .by_now {
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: var(--color-brown);
+  color: white;
+}
+.select_weight .weight_button {
+  background: none;
+  border: 1px solid var(--color-brown);
+  border-radius: 4px;
+  color: var(--color-navy);
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.select_weight .weight_button.active {
+  background-color: var(--color-brown);
+  color: #fff; /* Optional: Change text color when active */
+}
+
+
+.calander {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.message{
+  margin-bottom: 1rem;
+}
+
+.custom-radio {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.custom-radio input[type="radio"] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-radio input[type="radio"]:checked {
+  border-color: var(--color-pink);
+  background-color: var(--color-pink);
+}
+
+.custom-radio input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-radio input[type="radio"]:hover {
+  border-color: var(--color-pink);
+  box-shadow: 0 0 4px var(--color-pink);
+}
+
+.productImageMain{
+  height: 500px;
+  width: 100%;
+}
+
+.productImage{
+  display: flex !important;
+  justify-content: end !important;
+}
+
+
+@media only screen and (max-width:768px) {
+  .miniImage li a img {
+    /* width: 150px; */
+    height: 80px;
+    margin-top: 0;
+  }
+  .miniImage {
+    display: flex !important;
+    position: unset;
+  }
+  
+.productImage{
+  display: flex;
+  justify-content: space-between;
+}
+
+.productImageMain {
+  height: auto;
+  width: 100%;
+  object-fit:fill;
+  margin-bottom: 1rem;
+}
+
+}

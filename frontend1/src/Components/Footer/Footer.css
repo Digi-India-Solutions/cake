@@ -1,0 +1,137 @@
+.footer {
+  background-color: rgba(248, 241, 229, 0.77); /* Semi-transparent background */
+  font-family: "Poppins", sans-serif;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  background-image: url('../../images/footer-bg.jpg');
+}
+
+.Footeroverlay{
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.614);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Adds padding for better spacing */
+}
+
+.footer-section {
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-family: var(--font-family-design);
+}
+
+.footer-section a {
+  display: block;
+  color: var(--color-pink);
+  text-decoration: none;
+  margin: 8px 0;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section i{
+  color: var(--color-pink);
+  font-size: 18px;
+}
+
+.footer-section a:hover {
+  color: #d25e3c;
+}
+
+.subscribe-input input {
+  padding: 12px;
+  width: 80%;
+  border: 2px solid #d25e3c;
+  border-radius: 30px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.subscribe-input button {
+  background-color: #d25e3c;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-input button:hover {
+  background-color: #b74a30;
+}
+
+.footer-bottom {
+  background-color: rgba(77, 59, 34, 0.36); /* Adjusted color for consistency */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom .heart {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+.footer-product-api{
+  list-style-type: none !important;
+  padding: 0;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablet and below (smaller than 992px) */
+@media (max-width: 991px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-section h3 {
+    font-size: 1.1rem;
+  }
+  .footer-section a {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile (smaller than 576px) */
+@media (max-width: 575px) {
+  .footer-content {
+    padding: 0 10px;
+  }
+  .footer-section {
+    width: 100%;
+    text-align: center;
+  }
+  .subscribe-input input {
+    width: 70%;
+  }
+  .subscribe-input button {
+    width: 28%;
+  }
+  .footer-bottom {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+}

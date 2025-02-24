@@ -1,0 +1,158 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.ourTeam_miniHeading {
+  color: var(--color-pink);
+}
+
+.about-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-image-offset {
+  margin-top: -20px;
+}
+
+.about-content {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-pink);
+  margin-bottom: 1rem;
+  font-family: var(--font-family-design);
+}
+
+.about-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-features-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.about-feature-item {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.about-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.team-section {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: var(--color-brown);
+  margin-bottom: 1.5rem;
+  max-width: 35%;
+  margin: 1rem auto;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.team-member {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.team-member-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.team-member h3 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons i {
+  color: #fff;
+  background-color: #ff8b00;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .team-member {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-member {
+    width: calc(25% - 1rem);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container {
+    display: grid;
+    padding: 1rem;
+  }
+  .about-content {
+    padding-left: 0;
+  }
+  
+  .about-image-container{
+    margin-bottom: 1rem;
+  }
+  .team-section h2 {
+    font-size: 1.2rem;
+    max-width: 70%;
+}
+.team-section{
+  padding: 0;
+}
+}

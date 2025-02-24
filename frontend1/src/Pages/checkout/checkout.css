@@ -1,0 +1,257 @@
+:root {
+    --color-pink: #ec008c;
+    --color-brown: #90433a;
+    --font-family-design: "Pacifico", cursive;
+  }
+  
+  .checkoutPage{
+    background-color: var(--color-brown);
+    padding: 2rem 0rem;
+  }
+  
+  .checkout-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkout-form,
+  .cart-review {
+    flex: 1;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .checkout-form {
+    background: #f9f9f9;
+  }
+  
+  .cart-review {
+    background: var(--color-pink);
+    color: #fff;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-family: var(--font-family-design);
+  }
+  
+  .delivery-method {
+    display: flex;
+    justify-content: space-between;
+    max-width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .delivery-method label {
+    font-size: 14px;
+    color: var(--color-brown);
+  }
+  
+  .delivery-method input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input, .form-group textarea ,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--color-pink);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: var(--color-brown);
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .terms {
+    margin-top: 15px;
+  }
+  
+  .terms label {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .cart-review .cart-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .discount {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .discount input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .discount button {
+    padding: 10px 15px;
+    background-color: #fff;
+    color: var(--color-pink);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .discount button:hover {
+    background-color: var(--color-brown);
+    color: #fff;
+  }
+  
+  .totals {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .totals h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .pay-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-brown);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: var(--font-family-design);
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .secure-checkout {
+    text-align: center;
+    font-size: 12px;
+    color: #eee;
+    margin-top: 15px;
+  }
+  
+  .checkout-form h2{
+    color: var(--color-pink);
+  }
+
+  .checkout-btn{
+    border: none;
+    background-color: var(--color-brown);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .select .option:hover{
+    background-color: var(--color-pink) !important;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .checkout-container {
+      flex-direction: column;
+      margin: 20px;
+    }
+  
+    .delivery-method {
+      flex-direction: column;
+      gap: 10px;
+      max-width: 100%;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .discount {
+      flex-direction: column;
+    }
+  
+    .checkout-form,
+    .cart-review {
+      flex: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .checkout-container {
+      margin: 10px;
+    }
+  
+    .form-group input,
+    .form-group select {
+      padding: 8px;
+    }
+  
+    .pay-button {
+      font-size: 14px;
+    }
+  
+    .discount input,
+    .discount button {
+      padding: 8px;
+    }
+  }
+  
+
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* .cart-table th {
+    background-color: #f4f4f4;
+} */
+
+.cart-table img {
+    max-width: 80px;
+    height: auto;
+}
+.carttext{
+    font-size: 12px;
+}

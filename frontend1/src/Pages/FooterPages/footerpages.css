@@ -1,0 +1,185 @@
+
+  .termsConditions {
+    padding: 3rem 1.5rem;
+    background: linear-gradient(180deg, #fff6f1, #ffe0e9);
+  }
+  
+  .termsConditionsContent {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.8;
+  }
+  
+  .termsConditionsContent h1 {
+    color: var(--color-brown);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .termsConditionsContent h3 {
+    color: var(--color-pink);
+    font-family: var(--font-family-design);
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .introText {
+    color: var(--color-brown);
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+  
+  .introText .highlighted {
+    font-family: var(--font-family-design);
+    color: var(--color-pink);
+    font-weight: bold;
+  }
+  
+  .lastUpdate {
+    font-size: 0.9rem;
+    color: var(--color-brown);
+    margin-bottom: 2rem;
+    text-align: right;
+  }
+  
+  .termsSection h4 {
+    font-family: var(--font-family-design);
+    color: var(--color-brown);
+    margin-bottom: 0.8rem;
+  }
+  
+  .termsSection ul {
+    position: relative;
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .termsSection li {
+    color: var(--color-brown);
+    padding-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  .termsSection li::before {
+    content: "▶";
+    color: var(--color-pink);
+    position: absolute;
+    left: -1.2rem;
+    top: 0;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: var(--color-brown);
+    margin: 1.5rem 0;
+  }
+
+  .privacyPolicy {
+    padding: 3rem 1.5rem;
+    background: linear-gradient(180deg, #fff6f1, #ffe0e9);
+  }
+  
+  .privacyPolicyContent {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .privacyPolicy h3 {
+    color: var(--color-pink);
+    font-family: var(--font-family-design);
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .privacyPolicy h1 {
+    text-align: center;
+    color: var(--color-brown);
+    margin-bottom: 1rem;
+  }
+  
+  .privacySection h4 {
+    color: var(--color-brown);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-family-design);
+
+  }
+  
+  .privacySection p {
+    color: var(--color-brown);
+
+    line-height: 1.6;
+  }
+  
+  .privacySection ul {
+    margin-left: 20px;
+  }
+  
+  .privacySection ul li {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .faqPage {
+    padding: 3rem 1.5rem;
+    background: linear-gradient(180deg, #fff6f1, #ffe0e9);
+  }
+  
+  .faqContent {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .faqPage h3 {
+    color: var(--color-pink);
+    font-family: var(--font-family-design);
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .faqPage h1 {
+    text-align: center;
+    color: var(--color-brown);
+    margin-bottom: 1rem;
+  }
+  
+  .faqSection h4 {
+    color: var(--color-brown);
+    font-family: var(--font-family-design);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faqSection p {
+    color: var(--color-brown);
+    line-height: 1.6;
+  }
+  
+  .faqSection {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+  }
+  
+  .faqSection:last-child {
+    border-bottom: none;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .termsConditions {
+      padding: 2rem 1rem;
+    }
+    .termsConditionsContent {
+      font-size: 0.95rem;
+    }
+    .introText {
+      font-size: 1rem;
+    }
+  }
+  

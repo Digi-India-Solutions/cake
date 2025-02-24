@@ -1,0 +1,77 @@
+.contactSection {
+  background-color: rgba(255, 192, 203, 0.603);
+  padding: 4rem 4rem;
+}
+
+.contactHeading {
+  padding: 2rem 2rem;
+}
+
+.contactSectionBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.Contactsicon {
+  font-size: 20px;
+  background-color: var(--color-brown);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.contactSectionBox p {
+  margin-bottom: 0;
+  font-size: 20px;
+  color: var(--color-brown);
+  font-weight: 700;
+}
+.contactSectionBox a {
+  margin-bottom: 0;
+  text-decoration: none;
+  color: var(--color-pink);
+}
+.contactSectionBox address {
+  margin-bottom: 0;
+  color: var(--color-pink);
+}
+
+.socialMediaLinks {
+  display: flex;
+  gap: 20px;
+}
+.socialMediaLinks a {
+  color: var(--color-pink);
+  font-size: 22px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.contactFormSection {
+  padding: 3rem 3rem;
+}
+
+.form-input input {
+  border: 3px solid var(--color-brown);
+  color: var(--color-pink);
+}
+
+.form-input textarea {
+  border: 3px solid var(--color-brown);
+}
+
+.form-control:focus{
+    color: var(--color-pink);
+    border-color: transparent !important;
+    box-shadow: 0 0 0 .15rem var(--color-brown);
+    border: 0px solid !important;
+}
